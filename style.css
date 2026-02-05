@@ -31,7 +31,7 @@ body, html {
 }
 
 .logo {
-    width: 150px;   
+    width: 98px;   
     height: auto;
     /* Chagua logo yako kwa ID au class */
     position: fixed;   /* Inafanya element isiende na scroll */
@@ -48,7 +48,7 @@ body, html {
 /* Contentn 1 */
 /* Hero Section ya content1 */
 .hero {
-    height: 50vh;                /* full screen ya screen ya kwanza */
+    height: 60vh;                /* full screen ya screen ya kwanza */
     display:flex;
     flex-direction: column;
     justify-content: center;       /* center vertically */
@@ -380,3 +380,22 @@ body, html {
   height: 40px;
 }
 
+ @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
