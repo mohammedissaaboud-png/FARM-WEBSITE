@@ -311,6 +311,31 @@ body, html {
   }
 }
 
+.about{
+  text-align: left;
+
+}
+.about p { 
+  
+}
+
+
+
+.price {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.old-price {
+  text-decoration: line-through; /* hii inapiga kistari */
+  color: #888; /* grey color kwa bei ya zamani */
+  margin-right: 10px;
+}
+
+.new-price {
+  color: #121111; /* red color kwa bei mpya ya ofa */
+  font-weight: bold;
+}
 
 
                      /* FOOTER*/
