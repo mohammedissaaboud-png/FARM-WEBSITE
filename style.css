@@ -2,6 +2,13 @@
 html {
   scroll-behavior: smooth;
 }
+p  {
+  padding: 0px 25px;
+}
+
+h2 {
+   padding: 0px 15px;
+  }
 
 /* Background image */
 
