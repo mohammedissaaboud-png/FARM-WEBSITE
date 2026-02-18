@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayai ya Jumla | Uuzaji wa Mayai kwa Bei Nafuu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+               <!-- Notifiation   -->
+
+<!-- Popup message -->
+<div id="popup">
+  <h2>🥚 Karibu M2 Fresh Eggs!</h2>
+  <p>Tunaanza usambazaji wa mayai fresh mwezi wa 7. Weka oda yako sasa!</p>
+</div>
+
+<!-- JavaScript -->
+<script>
+const popup = document.getElementById('popup');
+
+// Show popup after 0.5 sec
+setTimeout(() => {
+  popup.style.opacity = '1';
+}, 500);
+
+// Hide popup automatically after 5 sec
+setTimeout(() => {
+  popup.style.opacity = '0';
+}, 5500);
+</script>
+                                               <!-- Header with Navigation Menu -->
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Mayai ya Jumla Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home" class="active">Nyumbani</a></li>
+                    <li><a href="#about">Kuhusu</a></li>
+                    <li><a href="#products">Bidhaa</a></li>
+                    <li><a href="#contact">Mawasiliano</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+                                <!-- Hero Section - TRANSPARENT BACKGROUND -->
+
+
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content"> 
+        <h1> M2 Fresh Eggs</h1>
+        <h1> Tunauza Mayai kwa Jumla ya Ubora kwa Bei  Nafuu </h1>
+        <p>Tunatoa mayai ya ubora kwa wauzaji wa jumla, hoteli, restoran, na biashara zote za chakula kote ndani ya Zanzibar.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn">Oda Sasa</a>
+            <a href="#products" class="btn btn-outline">Tazama Bidhaa</a>
+        </div>
+    </div>
+</section>
+
+                                   <!-- About Section -->
+
+                                
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title animate">
+                <h2>Kuhusu Biashara Yetu</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate delay-1">
+                    <h3>Ubora wa Mayai, Uaminifu wa Huduma</h3>
+                    <p>Tunajihusisha na uuzaji wa mayai yenye  ubora kwa bei ya nafuu kwa wateja wetu wa jumla. Tunatoa  huduma bora kwa wauzaji wa jumla, hoteli, na biashara za chakula na  wengineo.</p>
+                    <p>Mayai moja kwa moja  kutoka bandani  ili kuhakikisha unapata mayai safi, ya afya, na ya ubora wa hali ya juu.  usafirishaji wa haraka na waaminifu kote ndani ya mji wa Zanzibar usafirishaji ni bure baadhi za sehemu </p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Mayai kutoka kwa kuku bila kemikali</li>
+                        <li><i class="fas fa-check-circle"></i> Bei ya nafuu kwa Wateja wetu wa kila siku </li>
+                        <li><i class="fas fa-check-circle"></i> Usafirishaji wa haraka na waaminifu Free baadhi za sehemu</li>
+                        <li><i class="fas fa-check-circle"></i> Ufuatiliaji wa ubora wa mara kwa mara</li>
+                    </ul>
+                </div>
+                <div class="about-image animate delay-2">
+                    <img src="M2eggs.webp" alt="Mayai ya Jumla Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+                                <!-- Products Section -->
+
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Bidhaa Zetu</h2>
+            </div>
+            <div class="products-grid">
+
+                        <!-- Product 1 -->
+
+                <div class="product-card animate">
+                    <img src="product 1.png" alt="Mayai Tray 1" class="product-img">
+                    <div class="product-info">
+                        <h3>Mayai kwa Tray 1</h3>
+                        <p>Kwa wateja wadogo na wa kawaida.</p>
+                        <div class="price">Tsh 8,000 / Tray</div>
+                        <ul class="features-list">
+                            <li><i class="fas fa-egg"></i> 30 mayai kwa Tray</li>
+                            <li><i class="fas fa-heart"></i> Bora kwa afya</li>
+                            <li><i class="fas fa-tag"></i> Bei nafuu</li>
+                        </ul>
+                        <a href="#contact" class="btn" style="width:100%; text-align:center; margin-top:10px;">Nunua Sasa</a>
+                    </div>
+                </div>
+
+                           <!-- Product 2 -->
+
+                <div class="product-card animate delay-1">
+                    <img src="Product 2.jpg" alt="Mayai Jumla" class="product-img">
+                    <div class="product-info">
+                        <h3>Mayai ya Jumla</h3>
+                        <p>Kwanzia tray 5 na kupanda.</p>
+                        <div class="price">Tsh 7,700 / Tray</div>
+                        <ul class="features-list">
+                            <li><i class="fas fa-egg"></i> 30 mayai kwa Tray</li>
+                            <li><i class="fas fa-check"></i> Ukatiliaji wa ubora</li>
+                            <li><i class="fas fa-tag"></i> Bei nafuu kwa wingi</li>
+                        </ul>
+                        <a href="#contact" class="btn" style="width:100%; text-align:center; margin-top:10px;">Nunua Sasa</a>
+                    </div>
+                </div>
+
+                      <!-- Product 3 -->
+                 
+                <div class="product-card animate delay-2">
+                    <img src="product3.jpg" alt="Mayai Kudumu" class="product-img">
+                    <div class="product-info">
+                        <h3>Wateja wa Kudumu</h3>
+                        <p>Kwanzia tray 10 na kupanda.</p>
+                        <div class="price">Tsh 7,500 / Tray</div>
+                        <ul class="features-list">
+                            <li><i class="fas fa-egg"></i> 30 mayai kwa Tray</li>
+                            <li><i class="fas fa-star"></i> Ubora wa hali ya juu</li>
+                            <li><i class="fas fa-tag"></i> Bei bora zaidi</li>
+                        </ul>
+                        <a href="#contact" class="btn" style="width:100%; text-align:center; margin-top:10px;">Nunua Sasa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+                    <!-- Contact Section -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title animate">
+                <h2>Mawasiliano</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info animate delay-1">
+                    <h3>Wasiliana Nasi</h3>
+                    <p>Tutajiri kwa maswali yako, maoni, au oda. Tupo hapa kukusaidia kila siku ya kazi.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Anuani</h4>
+                                 Mchangani mjini & Bububu, Zanzibar
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Simu</h4>
+                                <p><a href="tel:+255772393992">+255 772 393 992 </a></p>
+                                <p><a href="tel:+255984316161">+255 984 316 161</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Barua Pepe</h4>
+                                <p><a href="mailto:info@.co.tz">info@M2fresheggs.co.tz</a></p>
+                                <p><a href="mailto:orders@mayaijumla.co.tz">orders@M2fresheggs.co.tz</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Saa za Kazi</h4>
+                                <p>Jumatatu - Alhamis: 7:30 asubuhi - 17:00 jioni</p>
+                                <p>Baadhi za siku Hufunguliwa kwa oda za dharura tu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Contact Form (EMAIL MOJA KWA MOJA) -->
+                <div class="contact-form animate delay-1">
+                    <h3>Tuma Ujumbe</h3>
+                    <!-- BADILISHA 'email.yako@gmail.com' KWA EMAIL YAKO YA KWELI HAPA CHINI -->
+                    <form action="https://formsubmit.co/M2FreshEggs@gmail.com" method="POST">
+                        
+                        <!-- Mipangilio ya FormSubmit (Usiguse hii) -->
+                          <input type="hidden" name="_subject" value="Oda Mpya - M2 Fresh Eggs!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://yoursite.com/thanks.html"> 
+
+                        <!-- Optional -->
+
+                        <div class="form-group">
+                            <label for="name">Jina Lako Kamili</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Barua Pepe</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Namba ya Simu</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Ujumbe</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Tuma Ujumbe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+                                        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="logo.png" alt="Mayai ya Jumla Logo" class="logo-img">
+                    </div>
+                    <p>Tunatoa mayai ya ubora kwa bei ya masafa kwa wauzaji wa jumla, hoteli, na biashara zote za chakula kote ndan ya zanzibar.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/M2fresheggs"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x"></i></a>
+                        <a href="https://www.instagram.com/M2_FreshEggs"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/255772393992?text=Habari!%20Nimeona%20M2%20Fresh%20Eggs%20mtandaoni.%20Naomba%20maelezo%20zaidi%20kuhusu%20nyinyi"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Menyu</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Nyumbani</a></li>
+                        <li><a href="#about">Kuhusu Sisi</a></li>
+                        <li><a href="#products">Bidhaa Zetu</a></li>
+                        <li><a href="#contact">Mawasiliano</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Huduma</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Uuzaji wa Mayai kwa Jumla</a></li>
+                        <li><a href="#">Usafirishaji wa Haraka</a></li>
+                        <li><a href="#">Ufuatiliaji wa Agizo</a></li>
+                        <li><a href="#">Msaada wa Wateja</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Chapisho</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Zanzibar, Tanzania</p>
+                    <p><i class="fas fa-phone"></i> +255 772 393 992</p>
+                    <p><i class="fas fa-envelope"></i> info@M2fresheggs.co.tz</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Mayai ya Jumla. Haki zote zimehifadhiwa. | Tovuti imeundwa kwa ajili ya biashara ya uuzaji wa mayai kwa jumla</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="mo.js"></script>
+</body>
+
+</html>
