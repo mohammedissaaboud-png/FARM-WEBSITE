@@ -1,23 +1,22 @@
-// ===== Mobile Navigation Toggle =====
+// ===== Mobile Navigation Toggle - MENU KULIKA KULIA =====
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
-
 if (hamburger && navMenu) {
     hamburger.addEventListener('click', () => {
         navMenu.classList.toggle('active');
-        hamburger.innerHTML = navMenu.classList.contains('active') 
-            ? '<i class="fas fa-times"></i>' 
-            : '<i class="fas fa-bars"></i>';
+        hamburger.innerHTML = navMenu.classList.contains('active')
+            ? '✕'
+            : '☰';
     });
 }
 
-// Close mobile menu when clicking a link
+// ===== Close mobile menu when clicking a link =====
 document.querySelectorAll('#nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
         if (navMenu) {
             navMenu.classList.remove('active');
             if (hamburger) {
-                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+                hamburger.innerHTML = '☰';
             }
         }
     });
